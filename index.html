@@ -1,194 +1,775 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/859e379c46.js" crossorigin="anonymous"></script>
-    <title>CV Jose Maria Campo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>José María Campo / Portfolio</title>
 </head>
-<body>
-<header>  
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="/img/logo.png" class="logo" alt="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Inicio</a></li>
-                    <li><a href="#about">Acerca de mi</a></li>
-                    <li><a href="#services">Habilidades</a></li>
-                    <li><a href="#portfolio">Mis Trabajos</a></li>
-                    <li><a href="#contact">Hablemos</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+
+  <div class="lines-wrap">
+    <div class="lines-inner">
+      <div class="lines"></div>
+    </div>
+  </div>
+  <!-- END lines -->
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  
+  <nav class="site-nav dark mb-5 site-navbar-target">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0">Portfolio<span class="text-primary">.</span></a>
+
+        <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
+          <li><a href="#home-section" class="nav-link active">Home</a></li>
+          <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+          <li class="has-children">
+            <a href="#about-section" class="nav-link">Acerca de mi</a>
+            
+            <!--
+            <ul class="dropdown">
+              <li><a href="elements.html" class="nav-link">Elements</a></li>
+              <li class="has-children">
+                <a href="#">Menu Two</a>
+                <ul class="dropdown">
+                  <li><a href="#" class="nav-link">Sub Menu One</a></li>
+                  <li><a href="#" class="nav-link">Sub Menu Two</a></li>
+                  <li><a href="#" class="nav-link">Sub Menu Three</a></li>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Diseñador Gráfico / UBA</p>
-                <h1>Residente del barrio <br> de Almagro / <span>Apasionado  <br> por el Diseño y el arte</span></h1>
-            </div>
-        </div>
+              </li>
+              <li><a href="#" class="nav-link">Menu Three</a></li>
+            </ul>
+-->
+            
+          </li>
+          <li><a href="#services-section" class="nav-link">Servicios</a></li>
+
+          <li><a href="#contact-section" class="nav-link">Contacto</a></li>
+        </ul>
+
+        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block" data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+        </a>
+
+      </div>
     </div>
-</header>
-<!-- ---------------------------- acerca de mi -------------------------------- -->
-<!-- ---------------------------- acerca de mi -------------------------------- -->
-<!-- ---------------------------- acerca de mi -------------------------------- -->
-<article> 
-<Section id="about">
+  </nav>
+
+
+
+  <div class="untree_co-section pb-0" id="home-section">
     <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-7">
+          <h1 class="heading gsap-reveal-hero mb-3"><strong>José María Campo<span class="text-primary">.</span></strong></h1>
+          <p class="gsap-reveal-hero"><a href="#" target="_blank" class="btn btn-outline-black">curriculum vitae</a></p>    
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <div class="untree_co-section untree_co-section-4 pb-0"  id="portfolio-section">
+    <div class="container">
+
+
+      <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
+      <div id="portfolio-single-holder"></div>
+
+      <div class="portfolio-wrapper">
+
+        <div id="posts" class="row">
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Identidad Visual</h3>
+                  <p>Branding</p>
+                </div>
+              </div>
+              <img src="images/img_1.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Manual de Marca</h3>
+                  <p>Identidad, applicationes</p>
+                </div>
+              </div>
+              <img src="images/img_2.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Identidad Visual</h3>
+                  <p>Branding</p>
+                </div>
+              </div>
+              <img src="images/img_3.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Diseño Web</h3>
+                  <p>Web, Branding</p>
+                </div>
+              </div>
+              <img src="images/img_5.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+            <!--
+            <video width="350" height="262" autoplay loop muted>
+              <source src="video/videogonperB.mp4" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            -->
+
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Aplicación de Identidad</h3>
+                  <p>Branding</p>
+                </div>
+              </div>
+              <img src="images/img_4.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Diseño Etiqueta</h3>
+                  <p>Branding</p>
+                </div>
+              </div>
+              <img src="images/img_6.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Identidad Visual</h3>
+                  <p>Branding</p>
+                </div>
+              </div>
+              <img src="images/img_7.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>RRSS</h3>
+                  <p>Community Manager</p>
+                </div>
+              </div>
+              <img src="images/img_8.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <video width="340" height="525" autoplay loop muted>
+              <source src="video/videobatidora.mp4" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Marca</h3>
+                  <p>Diseño de Logo</p>
+                </div>
+              </div>
+              <img src="images/img_10.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Identidad</h3>
+                  <p>Branding</p>
+                </div>
+              </div>
+              <img src="images/img_11.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+            <video width="350" height="262" autoplay loop muted>
+              <source src="video/videogonperB.mp4" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Diseño Etiqueta</h3>
+                  <p>Branding</p>
+                </div>
+              </div>
+              <img src="images/img_12.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Diseño Editorial</h3>
+                  <p>Brochure</p>
+                </div>
+              </div>
+              <img src="images/img_13.jpg" class="lazyload  img-fluid" alt="Images" />
+            </a>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+        <!-- </div>
+        </div> -->
+      </div>
+    </div>
+
+
+    <div class="untree_co-section pb-0" id="about-section">
+      <div class="container">
+        <div class="row justify-content-center mb-3">
+          <div class="col-lg-7 mx-auto text-center author-wrap">
+            <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
+            <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero">José María Campo</h3>
+            <p class="gsap-reveal-hero">Diseñador Gráfico / Comunicador Visual</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+
+
+            <p class="gsap-reveal-hero">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eius aspernatur vel dolor ad soluta enim placeat recusandae vero, ipsum doloremque qui quidem esse porro odio repellat sequi inventore ex.</p>
+
+            <p class="gsap-reveal-hero">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eius aspernatur vel dolor ad soluta enim placeat recusandae vero, ipsum doloremque qui quidem esse porro odio repellat sequi inventore ex.</p>
+
+            <p class="gsap-reveal-hero">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eius aspernatur vel dolor ad soluta enim placeat recusandae vero, ipsum doloremque qui quidem esse porro odio repellat sequi inventore ex.</p>
+
+            <p class="gsap-reveal-hero">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eius aspernatur vel dolor ad soluta enim placeat recusandae vero, ipsum doloremque qui quidem esse porro odio repellat sequi inventore ex.</p>
+
+            <p class="gsap-reveal-hero mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eius aspernatur vel dolor ad soluta enim placeat recusandae vero, ipsum doloremque qui quidem esse porro odio repellat sequi inventore ex.</p>
+
+
+            <p class="gsap-reveal-hero text-center"><a href="https://api.whatsapp.com/send/?phone=541161882674" target="_blank" class="btn btn-outline-black">Hablamos?</a></p>    
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="untree_co-section pb-0" id="services-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Servicios</strong></h2>
+            <p class="gsap-reveal-hero">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit illum dicta officiis eligendi rerum. </p>
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
-            <div class="about-col-1">
-                <img src="/img/FotoPerfil2.png" alt="Foto perfil">
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-7.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Redes Sociales</h3>
+              <p class="gsap-reveal-hero">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis porro iusto facilis laudantium</p>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">Acerca de mi</h1>
-                    <p>Soy José María Campo, Diseñador Gráfico de profesión.
-                    Vivo en la turgente y caótica Ciudad de Buenos Aires, donde los
-                    autos se enredan en las calles para luego avanzar. Me encuentro
-                    en el barrio de Almagro cerca de Av. Córdoba y Gascón.
-                    Mi formación profesional terminó en el año 2018 en una de las casas
-                    de la Universidad de Buenos Aires (UBA/FADU) siendo este uno de
-                    los momentos más importante a nivel personal.
-                    Me gustan los nuevos desafíos, aprender, los brainstorming, escribir,
-                    el arte y la cultura, la historia (especialmente la de arte), y trasladarme
-                    en bicicleta, si es posible, a todos los lugares.
-                    ¡Gracias por tu atención y que tengas un gran día!</p>
-                 <div class="tab-titles">
-                    <P class="tab-links active-link" onclick="opentab('habilidades')">habilidades</P>
-                    <P class="tab-links" onclick="opentab('experiencia')">experiencia</P>
-                    <P class="tab-links" onclick="opentab('educación')">educación</P>
-                 </div>  
-                 <div class="tab-contents active-tab" id="habilidades">
-                    <ul>
-                        <li><span>Lic. Diseñador Gráfico</span><br>Comunicador visual</li>
-                        <li><span>Marketing Digital</span><br>Estrategias online para empresas</li>
-                        <li><span>Communty Manager</span><br>Gestión de redes</li>
-                    </ul>
-                 </div> 
-                 <div class="tab-contents" id="experiencia">
-                    <ul>
-                        <li><span>Freelencer</span><br>Creación de diferentes piezas gráficas</li>
-                        <li><span>Estudio Pupo Dg</span><br>Diseñador Gráfico Jr</li>
-                        <li><span>Gonper SRL</span><br>Director de Arte Junior</li>
-                        <li><span>CFG Refrigeración</span><br>Director de Arte</li>
-                    </ul>
-                 </div> 
-                 <div class="tab-contents" id="educación">
-                    <ul>
-                        <li><span>Lic. Diseñador Gráfico</span><br>2013-2018 Univerdidad de Buenos Aires</li>
-                        <li><span>Diseñador Gráfico Digital</span><br>2021 Escuela Da Vinci</li>
-                        <li><span>Marketing Digital</span><br>2022 Escuela Da Vinci</li>
-                    </ul>
-                 </div> 
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-6.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Fotografía de Producto</h3>
+              <p class="gsap-reveal-hero">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis porro iusto facilis laudantium</p>
             </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-1.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Diseño Gráfico</h3>
+              <p class="gsap-reveal-hero">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis porro iusto facilis laudantium</p>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-8.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Social Advertisements / Ads</h3>
+              <p class="gsap-reveal-hero">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis porro iusto facilis laudantium</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-4.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">SEO</h3>
+              <p class="gsap-reveal-hero">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis porro iusto facilis laudantium</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-5.svg" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Branding</h3>
+              <p class="gsap-reveal-hero">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis porro iusto facilis laudantium</p>
+            </div>
+          </div>
+
         </div>
+      </div>
     </div>
-</section>
 
-<!-- ---------------------------- servicios -------------------------------- -->
-<!-- ---------------------------- servicios -------------------------------- -->
-<!-- ---------------------------- servicios -------------------------------- -->
 
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">Habilidades</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-sharp fa-solid fa-pen"></i>
-                <h2>Diseño Gráfico</h2>
-                <p>Desarrollo y aplicación de piezas gráficas comunicativas para las diferentes áreas comerciales</p>
+    <div class="untree_co-section pb-0">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Habilidades</strong></h2>
+            <p class="gsap-reveal-hero">The Big Oxmox advised her not to do so, because there were thousands of bad Commas.</p>
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
             </div>
-            <div>
-                <i class="fa-solid fa-ranking-star"></i>
-                <h2>Marketing Digital</h2>
-                <p>Planificación y ejecución estrategicas para el crecimiento empresarial en el mundo Ecommerce</p>
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                <h2>Social Media</h2>
-                <p>Análisis y gestión de redes sociales </p>
-            </div>
+          </div>
         </div>
-    </div>
-</div>
-
-<!-- ---------------------------- porfolio -------------------------------- -->
-<!-- ---------------------------- porfolio -------------------------------- -->
-<!-- ---------------------------- porfolio -------------------------------- -->
-
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">Mis Trabajos</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="img/work1.jpg" alt="logo campo gráfico">
-                <div class="layer">
-                    <h3>CAMPO GRÁFICO</h3>
-                    <p>Branding para estudio de diseño gráfico</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="img/work2.jpg" alt="logo campo gráfico">
-                <div class="layer">
-                    <h3>MOLDE</h3>
-                    <p>Creación de logo y naming para empresa de accesorios de cocina</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="img/work3.jpg" alt="logo campo gráfico">
-                <div class="layer">
-                    <h3>LAB ECOMMERCE</h3>
-                    <p>Brand para empresa de asesoramiento digital</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-</article>
-<!-- ---------------------------- contacto -------------------------------- -->
-<!-- ---------------------------- contacto -------------------------------- -->
-<!-- ---------------------------- contacto -------------------------------- -->
-
-<footer id="contact">
-    <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Hablemos</h1>
-                     <p><i class="fa-regular fa-paper-plane"></i>campichino@gmail.com</p>
-                     <p><i class="fa-solid fa-phone-volume"></i>(+54) 9 116188-2674</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-behance"></i></a>
-                </div>
-                <a href="/img/CV.pdf" download class="btn btn2">Mirá mi CV</a>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="0">
+            <div class="progressbar" data-animate="false">
+              <div class="circle" data-percent="98">
+                <div class="number"></div>
+                <p class="caption">Diseño Gráfico</p>
+              </div>
             </div>
-            <div class="contact-right">
-                <form action="" method="post">
-                    <input type="text" name="nombre" placeholder="tu nombre" required>
-                    <input type="text" name="email" placeholder="tu email" required>
-                    <textarea name="mensaje" rows="6" placeholder="tu mensaje"></textarea>
-                    <input type="submit" value="Enviar" class="btn btn2">
-                </form>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="progressbar" data-animate="false">
+              <div class="circle" data-percent="90">
+                <div class="number"></div>
+                <p class="caption">Diseño Audiovisual</p>
+              </div>
             </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="progressbar" data-animate="false">
+              <div class="circle" data-percent="85">
+                <div class="number"></div>
+                <p class="caption">Diseño Web</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="progressbar" data-animate="false">
+              <div class="circle" data-percent="80">
+                <div class="number"></div>
+                <p class="caption">Community Manager</p>
+              </div>
+            </div>
+
+          </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Todos los derechos reservados Ⓡ Creado por Jose Maria Campo</p>
+      </div>
     </div>
 
-</footer>
+    <div class="untree_co-section testimonial-wrap">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Reseñas</strong></h2>
+            <p class="gsap-reveal-hero">Los clientes dicen...</p>
+
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
 
 
-<script src="/js/function.js"></script>
+        <div data-aos="fade-left" data-aos-delay="200">
 
-</body>
-</html>
+
+
+          <div class="owl-carousel owl-3-slider">
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>James Smith</h3>
+                  <span class="caption">CEO &amp; Co-Founder</span>
+                </div>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit omnis tempore deleniti asperiores sint atque ipsa harum accusamus laudantium voluptatem, quisquam totam aliquid culpa corrupti facere! Eligendi, id dicta!</p>
+                </blockquote>
+              </div>
+            </div>
+            <!-- END .item -->
+
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>Jenny Wilson</h3>
+                  <span class="caption">CEO &amp; Co-Founder</span>
+                </div>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit omnis tempore deleniti asperiores sint atque ipsa harum accusamus laudantium voluptatem, quisquam totam aliquid culpa corrupti facere! Eligendi, id dicta!</p>
+                </blockquote>
+              </div>
+            </div>
+            <!-- END .item -->
+
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>Dan Anderson</h3>
+                  <span class="caption">CEO &amp; Co-Founder</span>
+                </div>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit omnis tempore deleniti asperiores sint atque ipsa harum accusamus laudantium voluptatem, quisquam totam aliquid culpa corrupti facere! Eligendi, id dicta!</p>
+                </blockquote>
+              </div>
+            </div>
+            <!-- END .item -->
+
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>James Smith</h3>
+                  <span class="caption">CEO &amp; Co-Founder</span>
+                </div>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit omnis tempore deleniti asperiores sint atque ipsa harum accusamus laudantium voluptatem, quisquam totam aliquid culpa corrupti facere! Eligendi, id dicta!</p>
+                </blockquote>
+              </div>
+            </div>
+            <!-- END .item -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+              <!-- 
+    <div class="untree_co-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Blog Posts</strong></h2>
+            <p class="gsap-reveal-hero">News &amp; Updates</p>
+
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff" stroke-width="2"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="post-entry">
+              <a href="#" class="thumb"><img src="images/gal_1.jpg" alt="image" class="img-fluid"></a>
+              <h3><a href="#">Separated they live in</a></h3>
+              <div class="post-meta">
+                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="post-entry">
+              <a href="#" class="thumb"><img src="images/gal_2.jpg" alt="image" class="img-fluid"></a>
+              <h3><a href="#">Separated they live in</a></h3>
+              <div class="post-meta">
+                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-entry">
+              <a href="#" class="thumb"><img src="images/gal_3.jpg" alt="image" class="img-fluid"></a>
+              <h3><a href="#">Separated they live in</a></h3>
+              <div class="post-meta">
+                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="post-entry">
+              <a href="#" class="thumb"><img src="images/gal_4.jpg" alt="image" class="img-fluid"></a>
+              <h3><a href="#">Separated they live in</a></h3>
+              <div class="post-meta">
+                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+-->  
+
+    <div class="untree_co-section" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Contacto</strong></h2>
+            <p class="gsap-reveal-hero">Te gustó mi trabajo? Dejame tu mensaje </p>
+
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <form action="#">
+              <div class="row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 form-group">
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 form-group">
+                  <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Dejame tu mensaje aquí..."></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 form-group">
+                  <input type="submit" class="btn btn-black" value="Enviar">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.178044200566!2d-58.425630524096675!3d-34.6030359482282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5e41da17ff%3A0xebce9fad2698f23f!2sAlmagro%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1731980854627!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Home</h3>
+              <ul class="list-unstyled float-left links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de mi</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Testimonios</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Proyectos</h3>
+              <ul class="list-unstyled float-left links">
+                <li><a href="#">Molde</a></li>
+                <li><a href="#">ProChef</a></li>
+                <li><a href="#">Piwowarow</a></li>
+                <li><a href="#">RRSS</a></li>
+                <li><a href="#">Video</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Servicios</h3>
+              <ul class="list-unstyled float-left links">
+                <li><a href="#">Diseño Gráfico</a></li>
+                <li><a href="#">Diseño Web</a></li>
+                <li><a href="#">Redes Sociales</a></li>
+                <li><a href="#">Diseño Audiovisual</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Contactame</h3>
+              <address>Almagro / CABA / Argentina</address>
+              <ul class="list-unstyled links mb-4">
+                <li><a href="tel://11234567890">(+54) 9 116188-2674</a></li>
+                <li><a href="tel://11234567890">(+54) 9 116188-2674</a></li>
+                <li><a href="mailto:campograficodg@gmail.com">campograficodg@gmail.com</a></li>
+              </ul>
+
+              <h3>RRSS</h3>
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                <li><a href="#"><span class="icon-dribbble"></span></a></li>
+              </ul>
+
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+        </div> <!-- /.row -->
+
+
+
+
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+
+              **==========
+            -->
+            <p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Todos los derechos reservados. &mdash; Diseñado por <a href="#">Campo Gráfico</a> / Almagro / CABA / ARG <!-- License information: https://untree.co/license/ -->
+            </p>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/wave-animate.js"></script>
+    <script src="js/circle-progress.js"></script>
+    <script src="js/imagesloaded.pkgd.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic.animation.gsap.min.js"></script>
+
+
+    <script src="js/custom.js"></script>
+    
+  </body>
+
+  </html>
